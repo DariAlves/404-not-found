@@ -1,0 +1,227 @@
+/* Reset */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 1.5rem;
+  margin: 0 auto;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (min-width: 660px) {
+  .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: auto 1fr auto;
+        grid-template-rows: auto 1fr auto;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1500px;
+  }
+}
+
+/* Header */
+.header {
+  margin-bottom: 30px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 660px) {
+  .header {
+    height: 100%;
+  }
+}
+
+.header p {
+  font-family: 'Inconsolata', sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1rem;
+  letter-spacing: -.08em;
+}
+
+@media (min-width: 660px) {
+  .header p {
+    font-size: 1.3rem;
+  }
+}
+
+/* Main */
+@media (min-width: 660px) {
+  .main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.main .main__img {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (min-width: 660px) {
+  .main .main__img {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.main .main__img img {
+  width: 100%;
+  max-width: 400px;
+}
+
+@media (min-width: 1400px) {
+  .main .main__img img {
+    width: 100%;
+    max-width: 550px;
+  }
+}
+
+.main .main__content {
+  margin-bottom: 50px;
+}
+
+@media (min-width: 660px) {
+  .main .main__content {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+}
+
+.main .main__content h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  font-family: 'Space Mono';
+  color: #333;
+  margin-top: .7em;
+}
+
+@media (min-width: 660px) {
+  .main .main__content h1 {
+    font-size: 3.5rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  .main .main__content h1 {
+    font-size: 4.5rem;
+  }
+}
+
+.main .main__content p {
+  font-family: 'Space Mono';
+  font-weight: normal;
+  line-height: 1.3em;
+  color: #4f4f4f;
+  margin-top: .7em;
+}
+
+@media (min-width: 660px) {
+  .main .main__content p {
+    font-size: 1.3em;
+    max-width: 350px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .main .main__content p {
+    font-size: 1.3em;
+  }
+}
+
+.main .main__content .btn {
+  margin-top: 4em;
+  background: #333;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: 'Space Mono';
+  font-weight: bold;
+  font-size: .7em;
+  padding: 15px 26px;
+  border: none;
+}
+
+@media (min-width: 660px) {
+  .main .main__content .btn {
+    font-size: .8em;
+    padding: 18px 28px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .main .main__content .btn {
+    font-size: .9em;
+    padding: 18px 28px;
+  }
+}
+
+.main .main__content .btn:focus {
+  outline: none;
+}
+
+/* Footer */
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 3.125rem;
+}
+
+.footer p {
+  font-family: 'Montserrat';
+  font-size: .8rem;
+  font-weight: 600;
+  color: #bdbdbd;
+  letter-spacing: 1px;
+}
+/*# sourceMappingURL=style.css.map */
